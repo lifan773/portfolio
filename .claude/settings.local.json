@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip list *)",
+      "Bash(pip install *)",
+      "Bash(python -m pip install python-docx -q)",
+      "Bash(python3 -m pip install python-docx -q)",
+      "Bash(where python *)",
+      "Bash(ls /c/Python*/python.exe)",
+      "Read(//c/Users/Administrator/AppData/Local/Programs/Python/**)",
+      "Bash(/c/Users/Administrator/AppData/Local/Programs/Python/Python313/python.exe *)",
+      "Bash(xxd)",
+      "Bash(git --version)",
+      "Bash(git config *)",
+      "Bash(ssh-keygen *)",
+      "Bash(ssh *)",
+      "Bash(gh --version)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
