@@ -8,42 +8,63 @@
 </head>
 <body>
 
-<nav>
+<nav id="navbar">
   <div class="nav-inner">
     <a href="index.html" class="logo">JD</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"><span class="num">01</span> Home</a></li>
+      <li><a href="about.html"><span class="num">02</span> About</a></li>
+      <li><a href="projects.html"><span class="num">03</span> Projects</a></li>
+      <li><a href="contact.html" class="active"><span class="num">04</span> Contact</a></li>
     </ul>
   </div>
 </nav>
 
 <main class="page">
-  <h2 class="section-title">Get In Touch</h2>
+  <p class="section-label reveal">Let's talk</p>
+  <h2 class="section-title reveal">Get In Touch</h2>
+  <div class="section-line reveal"></div>
 
   <div class="contact-grid">
-    <div class="contact-info">
+    <div class="contact-info reveal">
       <p>
         I'm currently open to freelance opportunities and interesting
         collaborations. If you have a project in mind, a question, or
-        just want to say hello — reach out and I'll get back to you.
+        just want to say hello &mdash; reach out and I'll get back to you
+        within 24 hours.
       </p>
 
-      <div class="contact-detail">
-        <div class="label">Email</div>
-        <div class="value">jane@example.com</div>
-
-        <div class="label">Location</div>
-        <div class="value">San Francisco, CA</div>
-
-        <div class="label">GitHub</div>
-        <div class="value">github.com/janedoe</div>
+      <div class="contact-detail-item">
+        <div class="icon-circle">&#9993;</div>
+        <div>
+          <div class="label">Email</div>
+          <div class="value">jane@example.com</div>
+        </div>
+      </div>
+      <div class="contact-detail-item">
+        <div class="icon-circle">&#9906;</div>
+        <div>
+          <div class="label">Location</div>
+          <div class="value">San Francisco, CA</div>
+        </div>
+      </div>
+      <div class="contact-detail-item">
+        <div class="icon-circle">&#10000;</div>
+        <div>
+          <div class="label">GitHub</div>
+          <div class="value">github.com/lifan773</div>
+        </div>
       </div>
     </div>
 
-    <form class="contact-form" id="contactForm">
+    <form class="contact-form reveal" id="contactForm">
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -56,15 +77,18 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
       </div>
-      <button type="submit" class="btn btn-primary" style="align-self:flex-start;cursor:pointer;font-family:inherit;">
-        Send Message
-      </button>
+      <button type="submit" class="form-submit">Send Message</button>
       <div class="form-message" id="formMessage"></div>
     </form>
   </div>
 </main>
 
 <footer>
+  <div class="footer-socials">
+    <a href="https://github.com/lifan773" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:jane@example.com">Email</a>
+  </div>
   &copy; 2026 Jane Doe. Built with care.
 </footer>
 

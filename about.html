@@ -8,23 +8,32 @@
 </head>
 <body>
 
-<nav>
+<nav id="navbar">
   <div class="nav-inner">
     <a href="index.html" class="logo">JD</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"><span class="num">01</span> Home</a></li>
+      <li><a href="about.html" class="active"><span class="num">02</span> About</a></li>
+      <li><a href="projects.html"><span class="num">03</span> Projects</a></li>
+      <li><a href="contact.html"><span class="num">04</span> Contact</a></li>
     </ul>
   </div>
 </nav>
 
 <main class="page">
-  <h2 class="section-title">About Me</h2>
+  <p class="section-label reveal">A bit about me</p>
+  <h2 class="section-title reveal">About Me</h2>
+  <div class="section-line reveal"></div>
 
   <div class="about-grid">
-    <div class="about-text">
+    <div class="about-text reveal">
       <p>
         I'm a full-stack developer based in San Francisco with over 6 years
         of experience building web applications. I specialize in JavaScript
@@ -32,15 +41,14 @@
         React and Node.js.
       </p>
       <p>
-        I started my career at a startup where I wore many hats — front-end,
+        I started my career at a startup where I wore many hats &mdash; front-end,
         back-end, and even some DevOps. That experience taught me to think
         about systems holistically and to value simplicity over cleverness.
       </p>
       <p>
         Today I focus on crafting performant, accessible, and maintainable
         software. I'm a strong advocate for code review, automated testing,
-        and continuous delivery. When I'm not coding, you'll find me hiking,
-        reading, or tinkering with game development.
+        and continuous delivery.
       </p>
 
       <div class="skills">
@@ -60,23 +68,25 @@
       </div>
     </div>
 
-    <div>
+    <div class="reveal">
       <div class="skills">
         <h3>Experience</h3>
-        <div style="margin-bottom:1.5rem;">
-          <div class="label" style="color:var(--accent);font-size:0.85rem;font-weight:600;letter-spacing:0.05em;">2023 – Present</div>
-          <div style="color:var(--white);font-weight:600;">Senior Developer — TechCorp</div>
-          <p style="margin-top:0.3rem;font-size:0.93rem;">Lead a team of four engineers building a customer-facing analytics dashboard. Migrated legacy REST APIs to GraphQL, reducing payload sizes by 40%.</p>
-        </div>
-        <div style="margin-bottom:1.5rem;">
-          <div class="label" style="color:var(--accent);font-size:0.85rem;font-weight:600;letter-spacing:0.05em;">2020 – 2023</div>
-          <div style="color:var(--white);font-weight:600;">Full-Stack Developer — StartupXYZ</div>
-          <p style="margin-top:0.3rem;font-size:0.93rem;">Built and shipped the core SaaS platform from idea to launch. Owned the React front-end and contributed to the Node.js / PostgreSQL back-end.</p>
-        </div>
-        <div style="margin-bottom:1.5rem;">
-          <div class="label" style="color:var(--accent);font-size:0.85rem;font-weight:600;letter-spacing:0.05em;">2018 – 2020</div>
-          <div style="color:var(--white);font-weight:600;">Junior Developer — WebAgency</div>
-          <p style="margin-top:0.3rem;font-size:0.93rem;">Developed responsive websites and e-commerce solutions for small-to-medium businesses using React, WordPress, and Shopify.</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2023 &ndash; Present</div>
+            <div class="timeline-role">Senior Developer &mdash; TechCorp</div>
+            <p class="timeline-desc">Lead a team of four engineers building a customer-facing analytics dashboard. Migrated legacy REST APIs to GraphQL, reducing payload sizes by 40%.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020 &ndash; 2023</div>
+            <div class="timeline-role">Full-Stack Developer &mdash; StartupXYZ</div>
+            <p class="timeline-desc">Built and shipped the core SaaS platform from idea to launch. Owned the React front-end and contributed to the Node.js / PostgreSQL back-end.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2018 &ndash; 2020</div>
+            <div class="timeline-role">Junior Developer &mdash; WebAgency</div>
+            <p class="timeline-desc">Developed responsive websites and e-commerce solutions for small-to-medium businesses using React, WordPress, and Shopify.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -84,8 +94,14 @@
 </main>
 
 <footer>
+  <div class="footer-socials">
+    <a href="https://github.com/lifan773" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:jane@example.com">Email</a>
+  </div>
   &copy; 2026 Jane Doe. Built with care.
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
